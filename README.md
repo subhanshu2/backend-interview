@@ -86,25 +86,6 @@ Orders
 ]
 ```
 
-Service Records
-
-```json
-[
-  {
-    "id": 123,
-    "name": "Inspection"
-  },
-  {
-    "id": 789,
-    "name": "Testing"
-  },
-  {
-    "id": 456,
-    "name": "Analysis"
-  }
-]
-```
-
 ## Duration
 
 Up to 2 hours.

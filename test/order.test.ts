@@ -144,20 +144,6 @@ describe("Update Order Tests", () => {
     expect(res.body).not.to.be.empty;
     expect(res.body.code).to.equal(103);
   });
-
-  it('- Should PUT /orders/:orderId', async function () {
-    const order = orders[Math.floor(Math.random() * orders.length)];    
-
-    await Order.update({createdAt: moment.utc().subtract(10, "hours")}, {where: {id: order.id}});
-
-    const updatedOrder = await orderService.show(order.id)
-    const res = await request(app).put(`/orders/${updatedOrder.id}`).send({service_ids: [2]});
-    
-    expect(res.status).to.equal(200);
-    expect(res.body).not.to.be.empty;
-    expect(res.body.data).not.to.be.empty;
-    expect(res.body.data).to.be.an("object");
-  });
 })
 
 

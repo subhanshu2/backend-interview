@@ -9,7 +9,7 @@
     "copy-static-assets": "ts-node copy-static-assets.ts",
     "clean": "rm -rf dist",
     "build": "npm run clean && npm run build-ts && npm run copy-static-assets",
-    "start": "npm run build && node dist/server.js"
+    "start": "npm run build && node dist/src/server.js"
   },
   "author": "",
   "license": "ISC",

@@ -14,3 +14,8 @@
   - `npm run start`: Server will start running on port 3000
   - `npm run migrate`: Run migrations and seeders on database
   - `npm run test`: Test the integration tests written in order.test.ts file 
+
+ Time Taken:
+  - Initial Setup (1 hr)
+  - Logical and query part (0.5 hr)
+  - Test (1 hr)

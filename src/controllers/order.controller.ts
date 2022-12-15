@@ -89,6 +89,7 @@ export class OrderController {
 
     // Check whether order with same services is created in the past 3 hours or not
     const pastOrder = await orderService.showByServiceIdInPastThreeHours(inputData.service_ids);
+    console.log(pastOrder.createdAt);
     if (pastOrder) {
       throw new TooManyRequestException(
         `Too many request. Cannot update order within 3 hours of creation.`,
